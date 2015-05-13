@@ -37,11 +37,11 @@
     </js-module>
 
     <platform name="android">
-        <source-file src="src/android/StatusBarTest.java" target-dir="src/org/apache/cordova/statusbar" />
+        <source-file src="src/android/StatusBarTest.java" target-dir="src/org/apache/cordova/statusbartest" />
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="StatusBar">
-                <param name="android-package" value="org.apache.cordova.statusbartest.StatusBar" />
+            <feature name="StatusBarTest">
+                <param name="android-package" value="org.apache.cordova.statusbartest.StatusBarTest" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>

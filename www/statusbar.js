@@ -38,7 +38,7 @@ var namedColors = {
     "brown": "#A52A2A"
 };
 
-var StatusBar = {
+var StatusBarTest = {
 
     isVisible: true,
 
@@ -67,7 +67,7 @@ var StatusBar = {
     },
 
     backgroundColorByName: function (colorname) {
-        return StatusBar.backgroundColorByHexString(namedColors[colorname]);
+        return StatusBarTest.backgroundColorByHexString(namedColors[colorname]);
     },
 
     backgroundColorByHexString: function (hexString) {
@@ -85,12 +85,12 @@ var StatusBar = {
 
     hide: function () {
         exec(null, null, "StatusBar", "hide", []);
-        StatusBar.isVisible = false;
+        StatusBarTest.isVisible = false;
     },
 
     show: function () {
         exec(null, null, "StatusBar", "show", []);
-        StatusBar.isVisible = true;
+        StatusBarTest.isVisible = true;
     }
 
 };
@@ -102,8 +102,8 @@ exec(function (res) {
             cordova.fireWindowEvent('statusTap');
         }
     } else {
-        StatusBar.isVisible = res;
+        StatusBarTest.isVisible = res;
     }
 }, null, "StatusBar", "_ready", []);
 
-module.exports = StatusBar;
+module.exports = StatusBarTest;
