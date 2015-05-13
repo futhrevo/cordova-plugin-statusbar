@@ -17,7 +17,7 @@
  * under the License.
  *
 */
-package org.apache.cordova.statusbar;
+package org.apache.cordova.statusbartest;
 
 import android.app.Activity;
 import android.graphics.Color;

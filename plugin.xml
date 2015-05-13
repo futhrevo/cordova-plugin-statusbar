@@ -33,15 +33,15 @@
     </engines>
 
     <js-module src="www/statusbar.js" name="statusbar">
-        <clobbers target="window.StatusBar" />
+        <clobbers target="window.StatusBarTest" />
     </js-module>
 
     <platform name="android">
-        <source-file src="src/android/StatusBar.java" target-dir="src/org/apache/cordova/statusbar" />
+        <source-file src="src/android/StatusBarTest.java" target-dir="src/org/apache/cordova/statusbar" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="StatusBar">
-                <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+                <param name="android-package" value="org.apache.cordova.statusbartest.StatusBar" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
